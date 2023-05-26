@@ -1,0 +1,32 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PruebaMaui"
+             x:Class="PruebaMaui.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="estiloLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="TextColor" Value="BlueViolet"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontFamily" Value=""/>
+            </Style>
+
+            <Style x:Key="colorVerde" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#198754"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style x:Key="colorRojo" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#dc3545"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

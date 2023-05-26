@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Bodega Silvia"
+             x:Class="PruebaMaui.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>           
+            
+
+            
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            Margin="10"
+            VerticalOptions="Center">
+
+            <Image Source="imagen.png" WidthRequest="200" HeightRequest="200"/>
+
+            <Label Text="User" Style="{StaticResource estiloLabel}" FontFamily="Arial"/>
+
+
+            <Entry Text="{Binding nombreUser}" Keyboard="Text"/>
+
+            <Label Text="Password" Style="{StaticResource estiloLabel}"/>
+
+            <Entry Text="{Binding contUser}" IsPassword="True"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="btnIniciar" Clicked="btnIniciar_Clicked" Text="Login" Style="{StaticResource colorVerde}"/>
+                <Button x:Name="btnRegistrar" Clicked="btnRegistrar_Clicked" Text="SingUp" Style="{StaticResource colorAzul}"/>
+            </StackLayout>
+
+                
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
